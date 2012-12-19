@@ -3,8 +3,9 @@
   <p>Twitter/Yammer–esque goodness for your office!</p>
   
   <%= form_tag "/place" do %>
+    <label for="place-name">What's the name of the place you work out of?</label>
     <div class="input-append">
-      <input type="text" name="name" class="input-small" placeholder="Example: office-cola-cola" size="100">
+      <input id="place-name" type="text" name="name" class="input-small" placeholder="Example: office-cola-cola" size="100">
       <%= submit_tag "Go!", class: "btn" %>
     </div>
   <% end %>

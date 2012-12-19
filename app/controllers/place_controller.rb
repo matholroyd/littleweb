@@ -1,6 +1,6 @@
 class PlaceController < ApplicationController
   def index
-    @place = params[:name]
+    @place = URI.encode(params[:name].strip.downcase.gsub(/\s/, ''))
 
     if request.post?
       redirect_to "/place/#{@place}"
