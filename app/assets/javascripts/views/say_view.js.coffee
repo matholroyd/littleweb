@@ -3,7 +3,8 @@ App.SayView = Ember.View.extend
   
   sendMessage: ->
     text = @$('#sayText').val()
-    message = {text: text}
-    App.router.say(message)
+    if text.trim().length > 0
+      message = {text: text}
+      App.router.say(message)
                           
-    @$('#sayText').val('').focus()
+      @$('#sayText').val('').focus()
