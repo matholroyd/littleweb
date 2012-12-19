@@ -33,7 +33,8 @@ module LittleWeb
     config.assets.enabled = true
     config.assets.version = '1.0'    
     config.assets.precompile += %W(
-
+      app.js
+      app_start.js
     )
   end
 end
