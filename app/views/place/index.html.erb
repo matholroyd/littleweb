@@ -1,0 +1,13 @@
+<%= content_for :footer_javascript do %>
+  <script>
+    $(document).ready(function() {
+      var pusher = new Pusher('<%= Pusher.key %>');
+
+      window.channel = pusher.subscribe('<%= @place_name %>');
+      window.channel.bind('client-chat', function(data) {
+        alert(data.greeting);
+      });
+    });
+  </script>
+<% end %>
+
