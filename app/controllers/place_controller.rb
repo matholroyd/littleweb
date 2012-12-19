@@ -1,5 +1,6 @@
 class PlaceController < ApplicationController
   def index
-    @place_name = "private-#{params[:name]}" 
+    @place = params[:name]
+    @channel = "private-#{params[:name]}" 
   end
 end
