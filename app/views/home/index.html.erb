@@ -7,7 +7,7 @@
       <div class="span12">
         <label for="place-name">What's the name of the place you work out of?</label>
         <div class="input-append">
-          <input id="place-name" type="text" name="name" class="input-small" placeholder="e.g. coca cola">
+          <%= text_field_tag 'name', @place, placeholder: "e.g. coca cola", id: "place-name", class: "input-small" %>
           <%= submit_tag "Go!", class: "btn" %>
         </div>
       </div>
