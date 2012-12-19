@@ -1,0 +1,6 @@
+<div id="sayForm">
+  <form class="form-inline">
+    {{view Ember.TextArea id="sayText"}}
+    <a class="btn btn-primary" {{action sendMessage target="view"}}>Send message</a>
+  </form>
+</div>

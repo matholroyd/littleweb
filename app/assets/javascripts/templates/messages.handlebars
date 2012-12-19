@@ -1,5 +1,6 @@
 <h2>Messages</h2>
 <ul>
-  <li>One</li>
-  <li>Two</li>
+  {{#each content}}
+    {{view App.MessageView }}
+  {{/each}}
 </ul>
