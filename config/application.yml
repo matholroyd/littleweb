@@ -1,10 +1,13 @@
 production: &default
-  name: LittleWeb
+  name: Little Web
   host: littleweb.herokuapp.com
+  messages_to_store: 100
   pusher:
     app_id: "<%= ENV['PUSHER_APP_ID'] %>"
     key: "<%= ENV['PUSHER_KEY'] %>"
     secret: "<%= ENV['PUSHER_SECRET'] %>"
+  redis:
+    url: "<%= ENV['MYREDIS_URL'] %>" 
    
 development:
   <<: *default

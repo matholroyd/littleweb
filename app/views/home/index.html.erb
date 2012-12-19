@@ -1,13 +1,11 @@
-<script src="http://js.pusher.com/1.12/pusher.min.js"></script>
-<script type="text/javascript">
-  var pusher = new Pusher('<%= Pusher.key %>'); // uses your API KEY
-  var channel = pusher.subscribe('test_channel');
-  channel.bind('greet', function(data) {
-    alert(data.greeting);
-  });
+<div class="hero-unit">
+  <h1>Welcome to <%= AppConfig.name %>!</h1>
+  <p>Twitter/Yammer–esque goodness for your office!</p>
   
-  var privateChannel = pusher.subscribe('private-channel');
-  privateChannel.bind('client-greeting', function(data) {
-    alert(data.greeting);
-  });
-</script>
+  <%= form_tag "/place" do %>
+    <div class="input-append">
+      <input type="text" name="name" class="input-small" placeholder="Example: office-cola-cola" size="100">
+      <%= submit_tag "Go!", class: "btn" %>
+    </div>
+  <% end %>
+</div>

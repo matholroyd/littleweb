@@ -19,6 +19,7 @@ module LittleWeb
   class Application < Rails::Application
     config.autoload_paths += %W(
       #{config.root}/lib
+      #{config.root}/app/services
     )
 
     config.encoding = "utf-8"

@@ -23,6 +23,6 @@ App.Router = Ember.Router.extend
         route: '/'
         
         connectOutlets: (router) ->
-          messages = [{text: "blah blah"}]
-          router.get('applicationController').connectOutlet('messages', messages)
+          router.get('applicationController').connectOutlet('messages', [])
+          App.get('messageCenter').loadMessages()
           

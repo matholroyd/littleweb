@@ -7,6 +7,8 @@ gem 'pg'
 gem 'pusher'
 gem 'ember-rails', :git => 'git://github.com/emberjs/ember-rails.git'
 gem 'bootstrap-sass'
+gem 'redis'
+gem 'hiredis'
 
 group :assets do
   gem 'jquery-rails'

@@ -64,6 +64,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     hike (1.2.1)
+    hiredis (0.4.5)
     i18n (0.6.1)
     ir_b (1.5.0)
     journey (1.0.4)
@@ -109,6 +110,7 @@ GEM
     rake (10.0.3)
     rdoc (3.12)
       json (~> 1.4)
+    redis (3.0.2)
     sass (3.2.3)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -141,11 +143,13 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   ember-rails!
   foreman!
+  hiredis
   ir_b
   jquery-rails
   pg
   pusher
   rails (= 3.2.8)
+  redis
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
   unicorn

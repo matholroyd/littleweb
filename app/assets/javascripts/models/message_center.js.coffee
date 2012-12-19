@@ -15,3 +15,14 @@ App.MessageCenter = Ember.Object.extend
 
   say: (message) ->
     @get('channel').trigger('client-chat', message)
+    
+    $.ajax
+      url: "/place/#{@get('place')}/messages"
+      type: 'POST'
+      data: {message: message}
+
+  loadMessages: ->
+    $.ajax
+      url: "/place/#{@get('place')}/messages"
+      success: (data, status, event) ->
+        App.router.get('messagesController').load(data.messages)
