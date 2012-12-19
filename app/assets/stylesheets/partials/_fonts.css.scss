@@ -1,3 +1,11 @@
 @import 'mixins';
 
-@include font-face(Museo, 'Museo300-Regular', normal, $asset-pipeline: true)
+/*@include font-face(Museo, 'Museo300-Regular', normal, $asset-pipeline: true)*/
+  
+@font-face {
+  font-family: Museo;
+  font-weight: normal;
+  font-style: normal;
+  src: url(/assets/Museo300-Regular.otf);
+  src: url(/assets/Museo300-Regular.otf?#iefix) format("embedded-opentype");
+}
