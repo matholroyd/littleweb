@@ -5,11 +5,11 @@
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= csrf_meta_tags %>
   </head>
-  <body>
+  <body class="<%= body_class %>">
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <%= link_to AppConfig.name, root_path, class: "brand"%>
+          <%= link_to AppConfig.name, root_path, class: "brand" %>
         </div>
       </div>
     </div>
