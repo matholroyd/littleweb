@@ -1,5 +1,6 @@
 App.SayView = Ember.View.extend
   templateName: 'say'
+  classNames: ["sayForm"]
   
   sendMessage: ->
     text = @$('#sayText').val()

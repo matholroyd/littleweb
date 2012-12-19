@@ -3,10 +3,14 @@
   <p>Twitter/Yammer–esque chat board for small offices/co-working places</p>
   
   <%= form_tag "/place" do %>
-    <label for="place-name">What's the name of the place you work out of?</label>
-    <div class="input-append">
-      <input id="place-name" type="text" name="name" class="input-small" placeholder="Example: coca cola" size="100">
-      <%= submit_tag "Go!", class: "btn" %>
+    <div class="row-fluid">
+      <div class="span12">
+        <label for="place-name">What's the name of the place you work out of?</label>
+        <div class="input-append">
+          <input id="place-name" type="text" name="name" class="input-small" placeholder="e.g. coca cola">
+          <%= submit_tag "Go!", class: "btn" %>
+        </div>
+      </div>
     </div>
   <% end %>
 </div>

@@ -1,13 +1,21 @@
 body.home-index {
   .hero-unit {
+    h1 {
+      color: #fff;
+      font-weight:normal;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+      font-family: "Museo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight:bold;
+    }
     p {
       margin-bottom: 2em;
+      text-shadow: 1px 1px 2px #ff00de;
     }
   }
   
   form {
     input#place-name {
-      width: 250px;
+      width: auto;
       font-size: 20px;
       line-height:20px * 2;
     }
@@ -16,7 +24,6 @@ body.home-index {
       box-sizing: border-box;
     }
   }
-  
 }
 
 #ember-app {

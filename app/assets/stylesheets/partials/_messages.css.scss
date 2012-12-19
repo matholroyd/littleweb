@@ -1,13 +1,7 @@
 #ember-app {
-  #sayForm {
-    textarea {
-      height: 45px;
-      box-sizing: border-box;
-      width: 400px;
-    }
-    .btn {
-      height: 45px;
-      box-sizing: border-box;
+  .sayForm {
+    input[type=text] {
+      width: auto;
     }
   }
 }

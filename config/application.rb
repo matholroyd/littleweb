@@ -36,6 +36,7 @@ module LittleWeb
     config.assets.precompile += %W(
       app.js
       app_start.js
+      .otf
     )
   end
 end
