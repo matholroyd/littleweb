@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: litter_web_development
+  pool: 5
+  username: <%= `whoami` %>
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: litter_web_test
+  pool: 5
+  username: <%= `whoami` %>
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: litter_web_production
+  pool: 5
+  username: <%= `whoami` %>
+  password:

@@ -1,0 +1,12 @@
+production: &default
+  host: littleweb.herokuapp.com
+  pusher:
+    app_id: "<%= ENV['PUSHER_APP_ID'] %>"
+    key: "<%= ENV['PUSHER_KEY'] %>"
+    secret: "<%= ENV['PUSHER_SECRET'] %>"
+   
+development:
+  <<: *default
+
+test:
+  <<: *default
