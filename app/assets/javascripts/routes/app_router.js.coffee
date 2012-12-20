@@ -36,6 +36,4 @@ App.Router = Ember.Router.extend
       closeSignIn: Ember.Route.extend
         enter: =>
           App.router.get('applicationController').disconnectOutlet('overlay')
-       
-        # redirectsTo: 'index'
 
