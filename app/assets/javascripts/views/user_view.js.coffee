@@ -3,5 +3,3 @@ App.UserView = Ember.View.extend
   tagName: 'section'
   classNames: ['user']
     
-  hasUsername: ->
-    !Ember.empty(@get('controller.content.username'))
