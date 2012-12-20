@@ -1,1 +1,10 @@
-{{ text }}
+<div class="username">
+{{#if username}}
+  @{{username}}
+{{else}}
+  <em>anonymous</em>
+{{/if}}
+</div>
+<div class="text">
+  {{text}}
+</div>

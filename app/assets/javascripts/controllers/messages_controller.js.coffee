@@ -6,6 +6,5 @@ App.MessagesController = Ember.ArrayController.extend
 
   load: (messages) ->
     if !@get('content.length') > 0
-      for text in messages
-        message = {text: text}
+      for message in messages
         @get('content').pushObject(message)

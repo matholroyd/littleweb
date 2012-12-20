@@ -1,7 +1,19 @@
+@import 'mixins';
+
 #ember-app {
   .sayForm {
     input[type=text] {
       width: auto;
+    }
+  }
+  
+  li.message {
+    .username {
+      color: $faded;
+      font-size: 90%;
+    }
+    .text {
+      
     }
   }
 }

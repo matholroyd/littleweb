@@ -10,7 +10,8 @@ App.SayView = Ember.View.extend
   sendMessage: ->
     text = @$('#sayText').val()
     if text.trim().length > 0
-      message = {text: text}
+      username = App.router.get('userController.content.username')
+      message = {text: text, username: username}
       App.router.say(message)
                           
       @$('#sayText').val('').focus()

@@ -4,7 +4,7 @@ class MessagesController < ApplicationController
   end
   
   def create
-    message = params[:message][:text]
+    message = params[:message]
     store.add_message(message)
     
     render json: "OK"
