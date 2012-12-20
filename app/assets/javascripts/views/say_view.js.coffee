@@ -1,7 +1,7 @@
 App.SayView = Ember.View.extend
   templateName: 'say'
-  classNames: ["sayForm"]
   tagName: "form"  
+  classNames: ["sayForm"]
   
   submit: (event) ->
     @sendMessage()
