@@ -8,6 +8,8 @@ App.Router = Ember.Router.extend
     App.router.get('messagesController').said(message)
     App.get('messageCenter').say(message)
 
+  sendMusic: -> App.get('messageCenter').sendSound('music')
+
   root: Ember.Route.extend
     
     index: Ember.Route.extend
