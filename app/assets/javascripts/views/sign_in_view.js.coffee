@@ -6,5 +6,9 @@ App.SignInView = Ember.View.extend
   submit: (event) ->
     event.stopPropagation()
     App.router.transitionTo('closeSignIn')
+
+  didInsertElement: ->
+    @$('input[type=text]').focus()
+    
     
     
